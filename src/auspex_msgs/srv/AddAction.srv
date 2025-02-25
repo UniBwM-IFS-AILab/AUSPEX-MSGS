@@ -1,0 +1,3 @@
+auspex_msgs/ExecuteAtom[] execute_atoms
+---
+uint16 error_code

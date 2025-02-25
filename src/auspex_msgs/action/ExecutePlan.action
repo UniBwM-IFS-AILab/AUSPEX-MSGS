@@ -1,0 +1,14 @@
+auspex_msgs/Plan plan
+---
+string platform_id
+int8 plan_id
+string result
+geographic_msgs/GeoPoint gps_position
+bool success
+---
+string platform_id
+int8 plan_id
+string[] finished_actions
+string[] detection_result
+geographic_msgs/GeoPoint[] detection_positions
+geographic_msgs/GeoPoint drone_gps_position

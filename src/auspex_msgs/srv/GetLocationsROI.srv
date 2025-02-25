@@ -1,0 +1,4 @@
+string object_of_interest #for example forest
+---
+geographic_msgs/GeoPoint[] bb_region_of_interest
+bool success 

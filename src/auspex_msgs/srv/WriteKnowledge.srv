@@ -1,0 +1,5 @@
+string collection
+string path
+string entity
+---
+bool success

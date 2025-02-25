@@ -1,0 +1,5 @@
+string[] actions
+---
+string result
+geographic_msgs/GeoPoint gps_position
+bool success

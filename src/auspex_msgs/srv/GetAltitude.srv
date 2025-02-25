@@ -1,0 +1,5 @@
+geographic_msgs/GeoPoint gps_position
+uint32 resolution
+---
+float32 altitude_amsl
+bool success

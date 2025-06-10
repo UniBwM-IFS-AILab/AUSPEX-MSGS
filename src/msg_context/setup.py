@@ -17,7 +17,6 @@ setup(
     maintainer_email='kai.sommer@unibw.de',
     description='Loader for importing messages depending on project context',
     license='MIT',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
         ],

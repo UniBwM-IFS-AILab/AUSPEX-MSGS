@@ -12,10 +12,4 @@ uint16 error_code
 #feedback definition
 
 geometry_msgs/PoseStamped current_pose
-builtin_interfaces/Duration navigation_time
-builtin_interfaces/Duration estimated_time_remaining
-int16 number_of_recoveries
-float32 distance_remaining
-int16 number_of_poses_remaining
-bool finished_takeoff            #finished_takeoff
-string finished_action_name
+int8 finished_actions_in_sequence

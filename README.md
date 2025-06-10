@@ -1,7 +1,8 @@
 # AUSPEX-MSGS
 A package for ROS2 message, service and action definitions shared by all AUSPEX modules.
 
-To cite **AUSPEX-MSGS**, please use the following reference: 
+For detailed instructions see the main repository [AUSPEX](https://github.com/UniBwM-IFS-AILab/AUSPEX).
+To cite **AUSPEX-MSGS**, please use the following reference:
 ```
 @article{Doeschl-et-al:2025:AUSPEX,
   author = {Bj{\"o}rn D{\"o}schl and Kai Sommer and Jane Jean Kiam},

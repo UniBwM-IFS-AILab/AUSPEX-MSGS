@@ -13,16 +13,17 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geographic_msgs)
 find_package(action_msgs REQUIRED)
-find_package(up_msgs REQUIRED)
+find_package(upf_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 
 
 set(MSGS_FILES
+"msg/BatteryState.msg"
 "msg/ExecuteAtom.msg"
-"msg/DroneState.msg"
+"msg/PlatformState.msg"
 "msg/ActionsVLN.msg"
-"msg/DroneImage.msg"
+"msg/FrameData.msg"
 "msg/UserCommand.msg"
 "msg/ObjectKnowledge.msg"
 "msg/PlatformClass.msg"
@@ -36,6 +37,15 @@ set(MSGS_FILES
 "msg/Plan.msg"
 "msg/KnowledgeChange.msg"
 "msg/AltitudeLevel.msg"
+"msg/PlannerCommand.msg"
+"msg/ExecutorCommand.msg"
+"msg/ExecutorState.msg"
+"msg/ExecutionInfo.msg"
+"msg/GoalCondition.msg"
+"msg/Goal.msg"
+"msg/Constraint.msg"
+"msg/PlanStatus.msg"
+"msg/ActionStatus.msg"
 )
 
 set(SRVS_FILES
@@ -65,7 +75,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${MSGS_FILES}
   ${SRVS_FILES}
   ${ACTION_FILES}
-  DEPENDENCIES geometry_msgs up_msgs sensor_msgs geographic_msgs std_msgs builtin_interfaces ${PROJECT_DEPENDENCIES}
+  DEPENDENCIES geometry_msgs upf_msgs sensor_msgs geographic_msgs std_msgs builtin_interfaces ${PROJECT_DEPENDENCIES}
 )
 
 

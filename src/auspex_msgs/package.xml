@@ -17,7 +17,7 @@
   <depend>rclcpp</depend>
   <depend>builtin_interfaces</depend>
   <depend>std_msgs</depend>
-  <depend>up_msgs</depend>
+  <depend>upf_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>action_msgs</depend>

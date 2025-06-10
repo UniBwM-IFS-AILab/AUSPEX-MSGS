@@ -1,4 +1,8 @@
 auspex_msgs/Plan plan
+string platform_id
+string team_id
+int8 plan_id
+string[] objects_of_interest
 ---
 string platform_id
 int8 plan_id

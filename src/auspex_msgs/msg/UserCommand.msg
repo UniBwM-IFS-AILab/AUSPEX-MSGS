@@ -10,4 +10,5 @@ int8 USER_TERMINATE = 9
 
 int8 user_command
 
-string target_platforms #if empty all drones are considered
+string team_id          # team id. empty string means all platforms
+string platform_id      # platform id.

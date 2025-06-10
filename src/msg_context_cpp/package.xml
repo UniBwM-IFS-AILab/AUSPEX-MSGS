@@ -4,13 +4,14 @@
   <name>msg_context_cpp</name>
   <version>1.0.0</version>
   <description>A CPP Loader for importing messages depending on project context</description>
-  <maintainer email="bjoern.doeschl@unibw.de">Kai Sommer</maintainer>
+  <maintainer email="bjoern.doeschl@unibw.de">Bjoern Doeschl</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
   <depend>auspex_msgs</depend>
+  <depend>hat_menthon</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

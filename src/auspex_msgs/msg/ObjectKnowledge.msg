@@ -4,6 +4,8 @@ string id
 
 string detection_class
 
+int8 priority
+
 builtin_interfaces/Time time_stamp
 
 geometry_msgs/Point position

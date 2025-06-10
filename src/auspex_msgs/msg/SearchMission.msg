@@ -16,6 +16,8 @@ uint16 desired_ground_dist                  # in m above ground
 
 geographic_msgs/GeoPoint starting_point     # in WGS84 coordinates
 
+string[] target_objects                     # a list of objects to be searched for
+
 string mission_goal                         # as string
 
 geographic_msgs/GeoPoint[] pois             # in WGS84 coordinates

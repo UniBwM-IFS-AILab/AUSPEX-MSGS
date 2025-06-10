@@ -9,6 +9,8 @@ geometry_msgs/Pose platform_pose    	        # in world coordinates (#4)
 
 string platform_status                          # e.g current performing action (#5)
 
+auspex_msgs/BatteryState battery_state          # the battery state of the platform
+
 string sensor_id                                # id of the current selected sensor (#6)
 
 geometry_msgs/Point sensor_position             # sensor position relative to platform (#7)

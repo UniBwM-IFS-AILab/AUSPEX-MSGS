@@ -1,19 +1,11 @@
 ## Representation of an action instance that appears in a plan.
 
-# A unique identifier of the action 
-string id
+int8 id   	                    # A unique identifier of the action
 
-# name of the action
-string action_name
+string action_name              # name of the action
 
-# Parameters of the action instance, required to be constants.
-up_msgs/Atom[] parameters
+int8 task_id                  # if an action the task it was planned from
 
+upf_msgs/Atom[] parameters      # Parameters of the action instance, required to be constants.
 
-# Current status of the action
-int8 status
-
-int8 ACTION_INACTIVE = 1
-int8 ACTION_ACTIVE = 2
-int8 ACTION_COMPLETED = 3
-int8 ACTION_ABORTED = 4
+string  status                  # Current status of the action as ActionStatus.msg

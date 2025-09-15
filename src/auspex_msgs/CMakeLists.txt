@@ -46,6 +46,7 @@ set(MSGS_FILES
 "msg/Constraint.msg"
 "msg/PlanStatus.msg"
 "msg/ActionStatus.msg"
+"msg/ClientInfo.msg"
 )
 
 set(SRVS_FILES
@@ -68,7 +69,6 @@ set(SRVS_FILES
 
 set(ACTION_FILES
 "action/ExecuteSequence.action"
-"action/ExecutePlan.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

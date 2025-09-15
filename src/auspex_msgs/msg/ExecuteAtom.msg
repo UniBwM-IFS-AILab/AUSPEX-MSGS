@@ -9,18 +9,16 @@ geographic_msgs/GeoPose goal_pose
 # Specifies whether altitude of goal_pose.position is in AMSL | AGL | REL
 auspex_msgs/AltitudeLevel altitude_level
 
-#search height for seachr area and scan area. Always in AMSL
+#search height for search area and scan area. Always in AMSL
 float32 height
 
-#for hover in position 
+#for hover in position
 float32 hover_duration # in ms
 
 #for scan area -> positions in gps
 geometry_msgs/Pose2D[] scan_polygon_vertices
 
-#further parameters
-
-#for circle
+# Further params
 float32 radius
-float32 speed #in m/s
+float32 speed_m_s #in m/s
 

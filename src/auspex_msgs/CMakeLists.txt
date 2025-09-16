@@ -25,6 +25,7 @@ set(MSGS_FILES
 "msg/ActionsVLN.msg"
 "msg/FrameData.msg"
 "msg/UserCommand.msg"
+"msg/PlatformCommand.msg"
 "msg/ObjectKnowledge.msg"
 "msg/PlatformClass.msg"
 "msg/SearchMission.msg"

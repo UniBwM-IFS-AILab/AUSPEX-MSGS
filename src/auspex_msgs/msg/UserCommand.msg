@@ -1,14 +1,26 @@
-int8 USER_CANCEL = 1
-int8 USER_PAUSE = 2
-int8 USER_RESUME = 3
-int8 USER_START = 4
-int8 USER_ACCEPT = 5
-int8 USER_REJECT = 6
-int8 USER_PLAN = 7
-int8 USER_RTH = 8
-int8 USER_TERMINATE = 9
+int8 USER_CANCEL_TEAM = 1
+int8 USER_PAUSE_TEAM = 2
+int8 USER_RESUME_TEAM = 3
+int8 USER_START_TEAM = 4
+int8 USER_ACCEPT_TEAM = 5
+int8 USER_REJECT_TEAM = 6
+int8 USER_PLAN_TEAM = 7
+int8 USER_RTH_TEAM = 8
+int8 USER_TERMINATE_TEAM = 9
+int8 USER_KILL_TEAM = 10
+
+int8 USER_CANCEL_PLATFORM = 11
+int8 USER_PAUSE_PLATFORM = 12
+int8 USER_RESUME_PLATFORM = 13
+int8 USER_START_PLATFORM = 14
+int8 USER_ACCEPT_PLATFORM = 15
+int8 USER_REJECT_PLATFORM = 16
+int8 USER_PLAN_PLATFORM = 17
+int8 USER_RTH_PLATFORM = 18
+int8 USER_TERMINATE_PLATFORM = 19
+int8 USER_KILL_PLATFORM = 20
 
 int8 user_command
 
-string team_id          # team id. empty string means all platforms
-string platform_id      # platform id.
+string team_id          # team id. 
+string platform_id      # platform id. empty string means all platforms

@@ -6,3 +6,4 @@ int32 fps                                       # frames per seconds
 int32 res_width                                 # resolution
 int32 res_height                                # resolution
 geographic_msgs/GeoPoint gps_position           # gps position
+float32 heading                                 # heading in degrees rel to north

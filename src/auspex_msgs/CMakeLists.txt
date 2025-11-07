@@ -18,59 +18,18 @@ find_package(sensor_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 
 
-set(MSGS_FILES
-"msg/BatteryState.msg"
-"msg/ExecuteAtom.msg"
-"msg/PlatformState.msg"
-"msg/ActionsVLN.msg"
-"msg/FrameData.msg"
-"msg/UserCommand.msg"
-"msg/PlatformCommand.msg"
-"msg/ObjectKnowledge.msg"
-"msg/PlatformClass.msg"
-"msg/SearchMission.msg"
-"msg/SensorMode.msg"
-"msg/Area.msg"
-"msg/PlatformCapabilities.msg"
-"msg/SensorCapabilities.msg"
-"msg/Waypoints.msg"
-"msg/ActionInstance.msg"
-"msg/Plan.msg"
-"msg/KnowledgeChange.msg"
-"msg/AltitudeLevel.msg"
-"msg/PlannerCommand.msg"
-"msg/ExecutorCommand.msg"
-"msg/ExecutorState.msg"
-"msg/ExecutionInfo.msg"
-"msg/GoalCondition.msg"
-"msg/Goal.msg"
-"msg/Constraint.msg"
-"msg/PlanStatus.msg"
-"msg/ActionStatus.msg"
-"msg/ClientInfo.msg"
-)
+# Collect interface files automatically
+file(GLOB MSGS_FILES     RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" CONFIGURE_DEPENDS
+  "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
+file(GLOB SRVS_FILES     RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" CONFIGURE_DEPENDS
+  "${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv")
+file(GLOB ACTION_FILES   RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" CONFIGURE_DEPENDS
+  "${CMAKE_CURRENT_SOURCE_DIR}/action/*.action")
 
-set(SRVS_FILES
-"srv/CancelGoal.srv"
-"srv/GetOrigin.srv"
-"srv/SetOrigin.srv"
-"srv/StringCommand.srv"
-"srv/GetAltitude.srv"
-"srv/GetHeighestPoint.srv"
-"srv/GetLocationsROI.srv"
-"srv/AddAction.srv"
-"srv/AddActionString.srv"
-"srv/ExistsKnowledge.srv"
-"srv/InsertKnowledge.srv"
-"srv/QueryKnowledge.srv"
-"srv/UpdateKnowledge.srv"
-"srv/DeleteKnowledge.srv"
-"srv/WriteKnowledge.srv"
-)
-
-set(ACTION_FILES
-"action/ExecuteSequence.action"
-)
+# Optional: sort for deterministic builds
+list(SORT MSGS_FILES)
+list(SORT SRVS_FILES)
+list(SORT ACTION_FILES)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${MSGS_FILES}

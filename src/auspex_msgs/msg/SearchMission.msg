@@ -2,9 +2,11 @@ std_msgs/Header header                      # header for time stamps
 
 string team_id                              # associated team id
 
+string mission_status                       # UNPROCESSED, PROCESSED, ACTIVE, COMPLETED, FAILED, CANCELED
+
 PlatformClass platform_class                # class of platform this mission is meant for
 
-Area search_area                            # in WGS84 coordinates
+Area[] search_areas                         # in WGS84 coordinates
 
 Area[] no_fly_zones                         # in WGS84 coordinates
 

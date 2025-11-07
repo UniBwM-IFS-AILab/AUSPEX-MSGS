@@ -24,3 +24,5 @@ int8 user_command
 
 string team_id          # team id. 
 string platform_id      # platform id. empty string means all platforms
+string planner_id       # planner id. empty string means all planners
+string planner_specs    # planner specifications. empty string means default specifications

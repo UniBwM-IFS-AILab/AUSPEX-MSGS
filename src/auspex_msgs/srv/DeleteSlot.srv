@@ -1,0 +1,7 @@
+string frame
+string instance_id
+string subframe
+string slot
+string variant
+---
+bool success

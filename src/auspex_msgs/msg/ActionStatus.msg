@@ -1,3 +1,4 @@
+# ActionStatus message definition. Used in the planner and executor to fille the string status field of ActionInstance.msg
 int8 INACTIVE = 1
 int8 ACTIVE = 2
 int8 PAUSED = 3

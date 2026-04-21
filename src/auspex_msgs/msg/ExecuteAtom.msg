@@ -21,4 +21,3 @@ geometry_msgs/Pose2D[] scan_polygon_vertices
 # Further params
 float32 radius
 float32 speed_m_s #in m/s
-

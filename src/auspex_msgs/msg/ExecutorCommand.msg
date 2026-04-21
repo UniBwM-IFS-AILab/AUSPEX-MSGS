@@ -7,5 +7,6 @@ int8 CANCEL = 3                                     # Indicating the executor to
 int8 TERMINATE = 4                                  # Indicating the executor to terminate the execution
 int8 KILL = 5                                       # Indicating the executor to kill the execution
 
-string platform_id                                    # Platform ID. If specified command only holds for the platform_id. Must be in team_id.
+string platform_id                                  # Platform ID. If specified command only holds for the platform_id. Must be in team_id.
 int8 command                                        # Command
+builtin_interfaces/Time execution_start_time        # Synchronized start time for execution

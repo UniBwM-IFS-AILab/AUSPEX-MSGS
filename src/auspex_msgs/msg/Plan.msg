@@ -1,8 +1,9 @@
 string platform_id                          # related platform id
 string team_id                              # team_id as string
 int8 priority                               # priority of the plan
-int8 plan_id                              # unique
+int64 plan_id                               # unique
 string status                               # Current State of the Plan (as name of the enum PlanStatus)
-
-auspex_msgs/ActionInstance[] tasks
-auspex_msgs/ActionInstance[] actions
+string tpn                                  # The Temporal Plan Network as stringified JSON
+upf_msgs/Plan upf_plan                      # The plan in upf format TimeTriggeredPlan
+auspex_msgs/Task[] tasks
+auspex_msgs/Action[] actions

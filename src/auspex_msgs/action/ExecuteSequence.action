@@ -1,5 +1,5 @@
 #goal definition
-auspex_msgs/ExecuteAtom[] execute_atoms
+auspex_msgs/Action[] actions
 ---
 #result definition
 

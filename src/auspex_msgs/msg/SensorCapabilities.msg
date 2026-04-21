@@ -1,6 +1,8 @@
+string platform_id          # mounted platform
+
 string sensor_id            # unique sensor_id
 
-SensorMode sensor_mode      # sensor mode enum
+string sensor_mode          # sensor mode enum
 
 float32 fov_hor_min         # in degrees
 

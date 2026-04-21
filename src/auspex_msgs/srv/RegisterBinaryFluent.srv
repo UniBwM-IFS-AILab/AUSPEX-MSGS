@@ -1,0 +1,8 @@
+string fluent
+string frame1
+string slot1
+string frame2
+string slot2
+string lambda_str
+---
+bool success

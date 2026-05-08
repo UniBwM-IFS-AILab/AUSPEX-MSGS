@@ -1,6 +1,0 @@
-geographic_msgs/GeoPoint[] region_bb
-uint32 resolution # default 20
-uint32 tile_size # max 1500
----
-float32 altitude_amsl
-bool success
